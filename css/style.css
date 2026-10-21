@@ -1,5 +1,7 @@
 body {
     font-family: "Heebo", sans-serif;
+    margin: 0;
+    color:#21243D
 }
 nav{
     display:flex;
@@ -21,16 +23,20 @@ nav{
 }
 header {
     display: flex;
+    justify-content: space-between;
     width: 1200px;
     margin: 75px auto;
 }
 
+#header-content {
+    width: 630px;
+}
 h1 {
     font-weight: 700;
     font-size: 44px;
+    margin-bottom: 0;
 }
 
-h1 {}
 
 a#bouton-cv {
     background-color: #FF6464;
@@ -39,3 +45,45 @@ a#bouton-cv {
     font-size: 20px;
     padding: 5px 15px;
 }
+#subtitle{
+    font-size:16px;
+    margin: 35px 0;
+}
+
+#blog {
+    background-color: #EDF7FA;
+    padding-bottom:35px;
+}
+#blog-content{
+    width: 1200px;
+    margin: auto;
+}
+h2{
+    font-weight:400;
+    font-size:22px;
+    padding-top:20px;
+}
+#articles{
+    display:flex;
+    justify-content: space-between;
+}
+#article.article-blog{
+    background-color:#FFFFFF;
+    border-radius:4px;
+    width:543px;
+    padding:10px 20px;
+    box-sizing:border-box;
+}
+.article-title{
+    font-size:26px;
+}
+.date-categorie{
+    font-size:18px;
+    display:flex;
+    gap:25px;
+}
+.article-description{
+    font-size:16px;
+}
+
+    
