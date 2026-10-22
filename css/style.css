@@ -15,7 +15,7 @@ nav{
     gap:65px;
 }
 
-.nav-link{
+.nav-link {
     color:#000000;
     text-decoration: none;
     font-weight: 700;
@@ -38,7 +38,7 @@ h1 {
 }
 
 
-a#bouton-cv {
+#bouton-cv {
     background-color: #FF6464;
     color: white;
     text-decoration: none;
@@ -63,11 +63,11 @@ h2{
     font-size:22px;
     padding-top:20px;
 }
-#articles{
-    display:flex;
+#articles {
+    display: flex;
     justify-content: space-between;
 }
-#article.article-blog{
+.article-blog{
     background-color:#FFFFFF;
     border-radius:4px;
     width:543px;
@@ -85,5 +85,38 @@ h2{
 .article-description{
     font-size:16px;
 }
-
-    
+#projets{
+    width: 1200px;
+    margin:auto;
+}
+.projet {
+    display:flex;
+    gap:50px;
+    margin-bottom:40px;
+}
+.projet-title{
+    font-weight:400;
+    font-size:30px;
+    margin:0 0 15px 0;
+}
+.date-type{
+    display:flex;
+    gap:25px;
+}
+.projet-date{
+    background-color:#142850;
+    border-radius:16px;
+    color:#FFFFFF;
+    font-weight:900;
+    font-size:18px;
+    width:62px;
+    height:25px;
+    text-align:center;
+}
+.projet-type{
+    color:#8695A4;
+    font-size:20px
+}
+.projet-description{
+    font-size:16px;
+}
