@@ -1,13 +1,17 @@
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: "Heebo", sans-serif;
     margin: 0;
-    color:#21243D
+    color:#21243D;
 }
 nav{
     display:flex;
     justify-content:space-between;
     align-items: center;
-    width: 1200px;
+    width:90%;
+    max-width: 1200px;
     margin:15px auto 0 auto;
 }
 #nav-links {
@@ -24,12 +28,14 @@ nav{
 header {
     display: flex;
     justify-content: space-between;
-    width: 1200px;
+    width:90%;
+    max-width: 1200px;
     margin: 75px auto;
 }
 
 #header-content {
-    width: 630px;
+    width:90%;
+    max-width: 630px;
 }
 h1 {
     font-weight: 700;
@@ -39,11 +45,12 @@ h1 {
 
 
 #bouton-cv {
+    display:inline-block;
     background-color: #FF6464;
     color: white;
     text-decoration: none;
     font-size: 20px;
-    padding: 5px 15px;
+    padding: 12px 20px;
 }
 #subtitle{
     font-size:16px;
@@ -55,7 +62,8 @@ h1 {
     padding-bottom:35px;
 }
 #blog-content{
-    width: 1200px;
+    width:90%;
+    max-width: 1200px;
     margin: auto;
 }
 h2{
@@ -72,7 +80,6 @@ h2{
     border-radius:4px;
     width:543px;
     padding:10px 20px;
-    box-sizing:border-box;
 }
 .article-title{
     font-size:26px;
@@ -86,7 +93,8 @@ h2{
     font-size:16px;
 }
 #projets{
-    width:1200px;
+    width:90%;
+    max-width: 1200px;
     margin:auto;
 }
 .projet{
@@ -111,6 +119,7 @@ h2{
     font-size:18px;
     width:62px;
     height:25px;
+    line-height:25px;
     text-align:center;
 }
 .projet-type{
@@ -125,17 +134,18 @@ h2{
     gap:40px;
 }
 #contact{
-    width:1200 px;
+    width:90%;
+    max-width: 1200px;
     margin:auto;
 }
 .contact-title {
     font-weight:800;
-    font-size:36px
+    font-size:36px;
 }
 #contact-intro{
     font-size:20px;
 }
-email{
+#contact-email{
     font-size:16px;
 }
 .socials-link{
@@ -159,6 +169,43 @@ input , select , textarea {
     border:none;
     height:46px;
 }
+input, select, textarea, button {
+    font-family:inherit;
+    font-size:16px;
+    padding:0 12px;
+}
+
+/* Listes déroulantes : flèche personnalisée */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    padding-right: 40px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%2321243D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    background-size: 12px 8px;
+}
+
+/* Texte grisé tant qu'aucune option n'est choisie
+   (fonctionne grâce à required + <option value="" disabled selected>) */
+select:invalid {
+    color: #6B7280;
+}
+
+/* Les options de la liste restent dans la couleur normale */
+select option {
+    color: #21243D;
+}
+
+input:focus-visible, select:focus-visible, textarea:focus-visible, button:focus-visible {
+    outline: 2px solid #142850;
+    outline-offset: 2px;
+}
+textarea{
+    padding-top:12px;
+    resize:vertical;
+}
 textarea#message{
     height:165px;
 }
@@ -167,9 +214,21 @@ button {
    color: white;
    border: none;
    height:56px;
+   cursor:pointer;
 }
+
 footer{
     padding-top:100px;
     text-align:center;
-    
+    padding-bottom:20px;
 }
+#icons-socials {
+    display:flex;
+    justify-content:center;
+    gap:35px;
+}
+#copyright {
+    font-size: 14px;
+    color: #21243D;
+}
+
