@@ -187,19 +187,22 @@ form {
     display:flex;
     flex-direction: column;
     flex:1;
-    gap:10px;
+    gap:0;       /*avant: gap:10px*/
 }
 #coordonnees{
     flex:1;
 }
 label{
     font-size:14px;
+    margin-bottom:17px;  /*nouveau*/
 }
 input , select , textarea {
     background-color:#F7F7F7;
     border:none;
     height:46px;
+     margin-bottom:29px;  /*nouveau*/
 }
+
 input, select, textarea, button {
     font-family:inherit;
     font-size:16px;
@@ -289,8 +292,8 @@ footer{
         height: auto;
     }
     h1 {
-        font-size: 28px;
-        line-height: 1.4;
+        font-size: 32px;
+        line-height: 1.25;
     }
     #subtitle {
         margin: 35px 0 24px;
@@ -319,8 +322,8 @@ footer{
         padding: 10px 20px 26px;
     }
     .article-title {
-        font-size: 20px;
-        line-height: 1.5;
+        font-size: 22px;
+        line-height: 1.35;
         margin: 0 0 14px;
     }
     .date-categorie {
@@ -351,11 +354,38 @@ footer{
         height: auto;
     }
     .projet-title {
-        font-size: 21px;
+        font-size: 24px;
         margin: 0 0 18px;
     }
     .projet-description {
         margin: 24px 0 0;
+        line-height: 1.5;
+    }
+        /* Contact et formulaire */
+    #contact {
+        width: 100%;
+        padding: 0 18px;
+    }
+    #contact h2 {
+        margin-bottom: 35px;
+    }
+    #contact-content {
+        flex-direction: column;
+    }
+       #coordonnees,
+    form {
+        flex: none;
+    }
+    #coordonnees {
+        order: 2;
+        margin-top: 16px;
+    }
+    .contact-title {
+        font-size: 24px;
+        margin: 32px 0 12px;
+    }
+    #contact-intro {
+        font-size: 16px;
         line-height: 1.5;
     }
 }
