@@ -25,6 +25,23 @@ nav{
     font-weight: 700;
     font-size: 20px;
 }
+#menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 54px;
+    height: 44px;
+    padding: 12px;
+    margin-right: -12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+#menu-toggle span {
+    display: block;
+    height: 2px;
+    background-color: #585A6D;
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -271,9 +288,31 @@ footer{
 
 @media (max-width: 768px) {
 
-    /* Navigation : liens masqués provisoirement (menu burger à l'étape R6) */
+       /* Menu burger */
+    nav {
+        position: relative;
+    }
+    #menu-toggle {
+        display: flex;
+    }
     #nav-links {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        background-color: #FFFFFF;
+        box-shadow: 0 8px 16px rgba(33, 36, 61, 0.12);
+        z-index: 10;
+    }
+    #nav-links.open {
+        display: flex;
+    }
+    .nav-link {
+        padding: 16px 20px;
+        border-bottom: 1px solid #EFEFEF;
     }
 
     /* Accueil : la photo passe au-dessus du texte, tout est centré */
