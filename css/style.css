@@ -327,4 +327,35 @@ footer{
         font-size: 16px;
         margin: 0 0 22px;
     }  
+        /* Travaux en vedette */
+    #projets {
+        width: 100%;
+        padding: 0 18px;
+        margin: 0 auto;
+    }
+    #projets h2 {
+        font-size: 18px;
+        text-align: center;
+        margin: 0 0 22px;
+    }
+    .projet {
+        flex-direction: column;
+        gap: 18px;
+        margin-bottom: 40px;
+        padding-bottom: 18px;
+        border-bottom: 2px solid #EFEFEF;
+    }
+    .projet-image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .projet-title {
+        font-size: 21px;
+        margin: 0 0 18px;
+    }
+    .projet-description {
+        margin: 24px 0 0;
+        line-height: 1.5;
+    }
 }
