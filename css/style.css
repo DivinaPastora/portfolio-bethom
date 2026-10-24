@@ -79,6 +79,19 @@ h1 {
     background-color: #EDF7FA;
     padding-bottom:35px;
 }
+#blog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+#view-all {
+    color: #00A8CC;
+    font-size: 16px;
+    text-decoration: none;
+}
+#view-all:hover {
+    text-decoration: underline;
+}
 #blog-content{
     width:90%;
     max-width: 1200px;
@@ -205,15 +218,17 @@ select {
     background-size: 12px 8px;
 }
 
-/* Texte grisé tant qu'aucune option n'est choisie
+/* Texte d'invite tant qu'aucune option n'est choisie
    (fonctionne grâce à required + <option value="" disabled selected>) */
 select:invalid {
-    color: #6B7280;
+    color: #B2B2B2;
+    font-size: 14px;
 }
 
-/* Les options de la liste restent dans la couleur normale */
+/* Les options de la liste restent dans une couleur grisée */
 select option {
     color: #21243D;
+    font-size: 16 px;
 }
 
 input:focus-visible, select:focus-visible, textarea:focus-visible, button:focus-visible {
