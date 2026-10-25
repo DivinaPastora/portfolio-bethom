@@ -100,7 +100,7 @@ h1 {
 
 #bouton-cv {
     display:inline-block;
-    background-color: #FF6464;
+    background-color: #D93A3A;
     color: white;
     text-decoration: none;
     font-size: 20px;
@@ -159,6 +159,9 @@ h2{
 .article-description{
     font-size:16px;
 }
+img{
+    height:auto
+}
 #projets{
     width:90%;
     max-width: 1200px;
@@ -192,7 +195,7 @@ h2{
     text-align:center;
 }
 .projet-type{
-    color:#8695A4;
+    color:#5F6F7F;
     font-size:20px;
 }
 .projet-description{
