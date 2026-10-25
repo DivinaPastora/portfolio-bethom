@@ -2,7 +2,7 @@
 
 Intégration HTML/CSS responsive d'une maquette Figma de portfolio pour un graphiste freelance. Projet réalisé dans le cadre de la formation Product Builder IA (LearningCampus).
 
-- **Site en ligne** : À COMPLÉTER APRÈS LA MISE EN LIGNE
+- **Site en ligne** : https://bethom.freehosting.dev/
 - **Maquette Figma** : https://www.figma.com/design/687syGebv93JgNJYw0FbPQ/LearningCampus-maquette-portfolio
 - **Dépôt GitHub** : https://github.com/DivinaPastora/portfolio-bethom
 
